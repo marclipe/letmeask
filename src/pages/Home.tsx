@@ -1,11 +1,15 @@
+import { useNavigate } from 'react-router-dom'
+
 import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg';
-import googleIconImg from '../assets/images/google-icon.svg';
+import googleIconImg from '../assets/images/google-icon.svg'
 
 import '../styles/auth.scss'
 import { Button } from '../componentes/Button';
 
 export function Home() {
+    const navigate = useNavigate(); 
+
     return (
         <div id="page-auth">
             <aside>
